@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Automated Warehouse System | Shayan Siddiqui</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Shayan<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#coursework" class="nav-link active">Course Work</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#coursework" class="back-link animate-on-scroll">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>Back to Course Work</span>
+            </a>
+            
+            <div class="project-hero-content">
+                <div class="project-meta animate-on-scroll">
+                    <span class="project-tag">ENGINEER 1P13 • Design Project 1</span>
+                    <span class="project-date">December 2025</span>
+                </div>
+                <h1 class="project-hero-title animate-on-scroll">
+                    Automated Warehouse<br>
+                    <span class="gradient-text">Ordering System</span>
+                </h1>
+                <p class="project-hero-description animate-on-scroll">
+                    A comprehensive Python-based system combining secure user authentication, 
+                    robotic arm automation for product picking and packing, barcode scanning 
+                    integration, and intelligent order processing with dynamic discounts.
+                </p>
+                <div class="project-hero-tech animate-on-scroll">
+                    <span>Python</span>
+                    <span>Q-Arm Robotics</span>
+                    <span>bcrypt Security</span>
+                    <span>CSV Data Management</span>
+                    <span>Barcode Scanner</span>
+                </div>
+                <div class="project-hero-stats animate-on-scroll">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">550+</span>
+                        <span class="hero-stat-label">Lines of Code</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">5</span>
+                        <span class="hero-stat-label">Team Members</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">6</span>
+                        <span class="hero-stat-label">Product Types</span>
+                    </div>
+                </div>
+                <div class="project-hero-download animate-on-scroll" style="margin-top: 2rem;">
+                    <a href="media/Tues-52_P1_DesignReport.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: var(--gradient-primary); color: var(--bg-primary); text-decoration: none; border-radius: 8px; font-weight: 600; transition: var(--transition-medium);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        <span>Download Final Report (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Navigation -->
+    <section class="project-tabs-section">
+        <div class="container">
+            <div class="tabs-wrapper">
+                <button class="tab-btn active" data-tab="narrative">
+                    <span class="tab-icon">📖</span>
+                    Project Narrative
+                </button>
+                <button class="tab-btn" data-tab="reflection">
+                    <span class="tab-icon">💭</span>
+                    Reflection
+                </button>
+                <button class="tab-btn" data-tab="media">
+                    <span class="tab-icon">📸</span>
+                    Media & Gallery
+                </button>
+                <button class="tab-btn" data-tab="process">
+                    <span class="tab-icon">⚙️</span>
+                    Design Process
+                </button>
+                <button class="tab-btn" data-tab="skills">
+                    <span class="tab-icon">🛠️</span>
+                    Skills Developed
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Contents -->
+    <main class="project-main">
+        <div class="container">
+            
+            <!-- ==================== NARRATIVE TAB ==================== -->
+            <div id="narrative" class="tab-content active">
+                
+                <!-- Overview -->
+                <div class="content-section">
+                    <h2 class="content-title">Project Overview</h2>
+                    <div class="content-grid">
+                        <div class="content-text">
+                            <p class="lead-text">
+                                For Design Project 1, our team was challenged to build a working warehouse ordering system 
+                                that could run the full order process using both software and robotics.
+                            </p>
+                            <p>
+                                Working as part of <strong>Team Tues-52</strong>, we developed a Python program that handles 
+                                everything from user sign-up/login and barcode scanning to triggering the Q-Arm to pick and pack items, and 
+                                then generating a receipt and saving the order.
+                            </p>
+                            <p>
+                                The main challenge was making all the parts work together reliably, since we had to connect 
+                                authentication, scanning, robotic motion, and data tracking into one smooth, user-friendly system.
+                            </p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🎯</div>
+                            <h4>Project Objective</h4>
+                            <p>
+                                Design and implement an automated warehouse system that demonstrates real integration between programming, robotics, basic security, and user experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="content-section">
+                    <h2 class="content-title">Key Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔐</div>
+                            <h3>Secure Authentication</h3>
+                            <p>
+                                Industry-standard password security using bcrypt hashing. 
+                                The system enforces strong password requirements: uppercase, 
+                                lowercase, digits, special characters, and minimum length.
+                            </p>
+                            <div class="code-snippet">
+                                <code>bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())</code>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">🦾</div>
+                            <h3>Q-Arm Robotic Automation</h3>
+                            <p>
+                                Physical product handling using the Q-Arm robotic system. 
+                                Custom movement functions for each product type enable 
+                                precise picking and packing operations.
+                            </p>
+                            <div class="code-snippet">
+                                <code>arm.rotate_gripper() → arm.set_arm_position() → pack()</code>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Smart Order Processing</h3>
+                            <p>
+                                Dynamic pricing with random discounts (5-50%), automatic 
+                                tax calculation (13%), and professional receipt generation 
+                                with colored terminal output.
+                            </p>
+                            <div class="code-snippet">
+                                <code>discount = random.randint(5, 50) # Dynamic savings!</code>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">📦</div>
+                            <h3>Barcode Integration</h3>
+                            <p>
+                                Real-time product scanning with validation against the 
+                                product database. Handles errors gracefully and filters 
+                                invalid products automatically.
+                            </p>
+                            <div class="code-snippet">
+                                <code>scanned = scan_barcode() # Hardware integration</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Flow -->
+                <div class="content-section">
+                    <h2 class="content-title">System Architecture</h2>
+                    <div class="architecture-diagram">
+                        <div class="arch-flow">
+                            <div class="arch-node">
+                                <span class="arch-icon">👤</span>
+                                <span class="arch-label">User Login</span>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node">
+                                <span class="arch-icon">📷</span>
+                                <span class="arch-label">Scan Products</span>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node">
+                                <span class="arch-icon">🔍</span>
+                                <span class="arch-label">Validate Items</span>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node">
+                                <span class="arch-icon">🤖</span>
+                                <span class="arch-label">Robot Packing</span>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node">
+                                <span class="arch-icon">🧾</span>
+                                <span class="arch-label">Generate Receipt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Contribution -->
+                <div class="content-section">
+                    <h2 class="content-title">My Contribution</h2>
+                    <div class="contribution-highlight">
+                        <div class="contribution-header">
+                            <span class="contribution-role">Administrator & Design Lead</span>
+                        </div>
+                        <p>
+                            As the team Administrator, I took on a leadership role managing project 
+                            deliverables and ensuring our team stayed on track. My contributions included:
+                        </p>
+                        <ul class="contribution-list">
+                            <li><strong>Project Management & Administration:</strong> Submitted all team deliverables, maintained deadline awareness, and ensured seamless coordination across all project phases</li>
+                            <li><strong>GANTT Chart Development:</strong> Created and managed comprehensive project GANTT chart to coordinate team activities and track milestones</li>
+                            <li><strong>CAD Design & Prototyping:</strong> Developed multiple CAD design iterations of possible prototypes, helped with 3D printing, and refined physical prototypes through multiple design cycles</li>
+                            <li><strong>Software Development:</strong> Developed the <code>complete_order()</code> function, implementing dynamic discount generation (5-50%), tax calculations (13% HST), professional receipt formatting with ANSI color codes, and transaction logging to CSV database</li>
+                            <li><strong>Technical Documentation:</strong> Authored significant portions of the final design report, including result of combined solution, refinements for future iterations, and technical specifications</li>
+                            <li><strong>Team Leadership:</strong> Kept the team in sync across coding, prototyping, and the report, and helped solve issues when things didn’t fit together.</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">
+                            As the Administrator, I handled deadlines and submissions, but I also stayed hands-on with the technical work.
+                            I helped with the design, prototyping, and coding while keeping the team organized and on track.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team -->
+                <div class="content-section">
+                    <h2 class="content-title">Team Tues-52</h2>
+                    <div class="team-grid">
+                        <div class="team-member highlight-member">
+                            <div class="member-avatar">SS</div>
+                            <h4 class="member-name">Shayan Siddiqui</h4>
+                            <p class="member-role">Administrator</p>
+                            <div class="member-desc-wrapper">
+                                <p class="member-desc">Led project administration by managing all team deliverables, creating the GANTT chart, and coordinating deadlines. Designed multiple CAD prototypes and led 3D printing iterations. Developed the complete_order() function handling transaction processing, dynamic discounts, tax calculations, and receipt generation. Contributed significantly to final report documentation and technical writing.</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">SW</div>
+                            <h4 class="member-name">Shuja Wazir</h4>
+                            <p class="member-role">Subject Matter Expert</p>
+                            <div class="member-desc-wrapper">
+                                <p class="member-desc">Built source materials database and ensured reliable research documentation. Developed sign_up() function with password validation and bcrypt hashing.</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">JD</div>
+                            <h4 class="member-name">Jennifer Desbarats</h4>
+                            <p class="member-role">Coordinator</p>
+                            <div class="member-desc-wrapper">
+                                <p class="member-desc">Coordinated team meetings, maintained logbook of discussions, and completed all TEAM worksheets during Design Studio. Implemented authenticate() function for secure login verification.</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">KD</div>
+                            <h4 class="member-name">Kian Diggle</h4>
+                            <p class="member-role">Manager</p>
+                            <div class="member-desc-wrapper">
+                                <p class="member-desc">Facilitated team discourse, managed conflict resolution, and served as Lead Facilitator with instructional team. Created Preliminary GANTT Chart. Developed lookup_products() function for scanning validation and filtering.</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">HA</div>
+                            <h4 class="member-name">Habibah Aboueleinin</h4>
+                            <p class="member-role">Subject Matter Expert</p>
+                            <div class="member-desc-wrapper">
+                                <p class="member-desc">Built source materials database and ensured reliable research documentation. Created customer_summary() function for order history reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== REFLECTION TAB ==================== -->
+            <div id="reflection" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Personal Reflection</h2>
+                    
+                    <div class="reflection-content">
+                        <blockquote class="reflection-quote">
+                            "This project was my first real experience combining software with 
+                            physical hardware, and it completely changed how I think about 
+                            building systems that interact with the real world."
+                        </blockquote>
+                        
+                        <div class="reflection-block">
+                            <h3>🎓 What I Learned</h3>
+                            <p>
+                                Working on this warehouse system taught me way more than just Python. It showed me that the software only works if the hardware is actually feasible and consistent.
+                                Our code could be “right,” but if the gripper angle was slightly off, the material was too slippery, or the timing didn’t match the Q-Arm’s movement, the pickup would still fail.
+                                So troubleshooting meant looking at the whole setup: approach angle, object position, friction on the pads, servo strength, and speed. A lot of the fixes weren’t just in the code either.
+                                They came from testing small changes, adjusting the mechanism, and retuning movements until it worked reliably. The biggest lesson though was time management. 
+                                With tight deadlines and limited studio time, we had to plan tests, split tasks properly, and make decisions fast, because even a good design doesn’t matter if you don’t have enough time to build, test, and refine it.
+                            </p>
+                        </div>
+
+                        <div class="reflection-block">
+                            <h3>🤝 Teamwork Experience</h3>
+                            <p>
+                                Coordinating with four other team members meant we had to communicate clearly and stay organized, especially since we were balancing the robot, the mechanism, testing, and the final report all at the same time.
+                                Having clear responsibilities and keeping everyone updated made a big difference, because one delay in one area could slow down everything else.
+                            </p>
+                            <p>
+                                Regular check-ins helped us catch issues early and adjust our plan before they became last-minute problems.
+                                It also helped us manage time better during the week, so we could use Design Studio time for testing and refining instead of scrambling to figure out what was missing.
+                            </p>
+                        </div>
+
+                        <div class="reflection-block">
+                            <h3>💡 Challenges & Solutions</h3>
+                            <p>
+                                One of the biggest challenges was making the <strong>mechanism work reliably with real objects</strong>,
+                                not just in theory. Our first rack-and-pinion design had strong gripping potential, but we ran into a
+                                feasibility issue because of how the Q-Arm approaches the objects. It could not move in perfectly flat,
+                                so we redesigned the gripper arms to sit at a <strong>downward angle</strong> and measured the angle using a
+                                protractor so the arms stayed perpendicular to the floor during pickup. We also found that the 3D-printed
+                                parts were <strong>too smooth</strong>, so objects slipped. To fix that, we added <strong>sponge pads</strong> so the
+                                gripper could form around different shapes and grip with more friction. This made pickups more consistent
+                                and reduced damage to the objects.
+                            </p>
+                            
+                            <p>
+                                On the system side, we had to make sure everything still worked under <strong>time pressure</strong> and real-world
+                                constraints. The Q-Arm code took trial and error because we had to tune joint angles so the gripper landed
+                                in the right spot consistently, and we even had to adjust our program during demo prep when we were assigned
+                                a <strong>different Q-Arm</strong> and the servo behaved differently. For the ordering process, we also added basic
+                                checks so the system did not break during use, like ignoring invalid scans, handling empty orders, and making
+                                sure totals and receipts still made sense. Overall, the main solution was staying realistic, testing early,
+                                and managing time properly so we always had something reliable to demonstrate.
+                            </p>
+                        </div>
+
+                        <div class="reflection-block">
+                            <h3>🚀 Future Applications</h3>
+                            <p>
+                                The skills I developed in this project will be useful in future courses and co-op roles because they go beyond
+                                just coding. I got experience working with hardware constraints, adding basic security features, and making sure
+                                different parts of a system can work together reliably.
+                            </p>
+                            
+                            <p>
+                                I also got a lot better at <strong>working in a team</strong>, especially with splitting responsibilities,
+                                communicating progress, and combining work under tight deadlines. Overall, I’m more confident handling projects
+                                that involve integrated systems, and this project made it clear that planning and documentation are just as important
+                                as the build itself when multiple people depend on each other’s work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== MEDIA & GALLERY TAB ==================== -->
+            <div id="media" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Media & Gallery</h2>
+                    <p class="section-subtitle" style="margin-bottom: 3rem;">Visual documentation of our design process and prototype iterations</p>
+                    
+                    <!-- Video Section -->
+                    <div class="content-section" style="margin-bottom: 4rem;">
+                        <h3 class="content-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Q-Arm Demonstration Video</h3>
+                        <div class="video-container" style="max-width: 800px; margin: 0 auto; background: var(--bg-card); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                            <div style="position: relative; padding-bottom: 177.78%; height: 0; overflow: hidden; border-radius: 12px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin-bottom: 1.5rem; cursor: pointer;" onclick="window.open('https://youtube.com/shorts/djgN3OHc7W0', '_blank')">
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+                                    <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); transition: transform 0.3s ease;">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#667eea" style="margin-left: 4px;">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
+                                    <p style="color: white; font-weight: 600; font-size: 1.1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Watch on YouTube</p>
+                                </div>
+                                <img src="https://img.youtube.com/vi/djgN3OHc7W0/maxresdefault.jpg" alt="Q-Arm Demo Video Thumbnail" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3;">
+                            </div>
+                            <a href="https://youtube.com/shorts/djgN3OHc7W0" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: var(--gradient-primary); color: var(--bg-primary); text-decoration: none; border-radius: 8px; font-weight: 600; transition: var(--transition-medium); box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                </svg>
+                                <span>Watch Q-Arm Demo on YouTube</span>
+                            </a>
+                            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.9rem;">
+                                Q-Arm robotic system picking and packing products (1.5X speed recommended)
+                            </p>
+                        </div>
+                            </div>
+
+                    <!-- Prototype Iterations -->
+                    <div class="content-section" style="margin-bottom: 4rem;">
+                        <h3 class="content-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Prototype Iterations</h3>
+                        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                            <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/iteration-1.jpg', 'Prototype Iteration 1')">
+                                    <img src="media/iteration-1.jpg" alt="Prototype Iteration 1" class="gallery-image" style="width: 100%; height: 250px; object-fit: cover; display: block; transition: transform 0.3s;">
+                                    <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="m21 21-4.35-4.35"></path>
+                                            <path d="M11 8v6M8 11h6"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Iteration 1</h4>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Initial prototype design</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/iteration-2.jpg', 'Prototype Iteration 2')">
+                                    <img src="media/iteration-2.jpg" alt="Prototype Iteration 2" class="gallery-image" style="width: 100%; height: 250px; object-fit: cover; display: block; transition: transform 0.3s;">
+                                    <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="m21 21-4.35-4.35"></path>
+                                            <path d="M11 8v6M8 11h6"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Iteration 2</h4>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Refined design with improvements</p>
+                                </div>
+                            </div>
+                            <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/iteration-3.jpg', 'Prototype Iteration 3')">
+                                    <img src="media/iteration-3.jpg" alt="Prototype Iteration 3" class="gallery-image" style="width: 100%; height: 250px; object-fit: cover; display: block; transition: transform 0.3s;">
+                                    <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="m21 21-4.35-4.35"></path>
+                                            <path d="M11 8v6M8 11h6"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Iteration 3</h4>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Final prototype design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CAD Drawings -->
+                    <div class="content-section">
+                        <h3 class="content-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">CAD Drawings & Engineering Documentation</h3>
+                        
+                        <!-- CAD Model -->
+                        <div style="margin-bottom: 3rem;">
+                            <h4 style="margin-bottom: 1rem; font-size: 1.2rem;">CAD Model</h4>
+                            <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); max-width: 600px;">
+                                <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/cad-model.jpg', 'CAD Model')">
+                                    <img src="media/cad-model.jpg" alt="CAD Model" class="gallery-image" style="width: 100%; height: 400px; object-fit: contain; background: var(--bg-secondary); display: block; padding: 1rem; transition: transform 0.3s;">
+                                    <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="m21 21-4.35-4.35"></path>
+                                            <path d="M11 8v6M8 11h6"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem;">3D CAD model of the final design</p>
+                                </div>
+                            </div>
+                            </div>
+
+                        <!-- Exploded View -->
+                        <div style="margin-bottom: 3rem;">
+                            <h4 style="margin-bottom: 1rem; font-size: 1.2rem;">Exploded View Drawing</h4>
+                            <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); max-width: 600px;">
+                                <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/exploded-view.jpg', 'Exploded View Drawing')">
+                                    <img src="media/exploded-view.jpg" alt="Exploded View" class="gallery-image" style="width: 100%; height: 400px; object-fit: contain; background: var(--bg-secondary); display: block; padding: 1rem; transition: transform 0.3s;">
+                                    <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="m21 21-4.35-4.35"></path>
+                                            <path d="M11 8v6M8 11h6"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div style="padding: 1.5rem;">
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Exploded view showing component assembly</p>
+                                </div>
+                            </div>
+                            </div>
+
+                        <!-- Dimensioned Engineering Drawings -->
+                        <div>
+                            <h4 style="margin-bottom: 1.5rem; font-size: 1.2rem;">Dimensioned Engineering Drawings</h4>
+                            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                                <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                                    <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/drawing-1.png', 'Engineering Drawing 1')">
+                                        <img src="media/drawing-1.png" alt="Engineering Drawing 1" class="gallery-image" style="width: 100%; height: 300px; object-fit: contain; background: var(--bg-secondary); display: block; padding: 1rem; transition: transform 0.3s;">
+                                        <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <path d="m21 21-4.35-4.35"></path>
+                                                <path d="M11 8v6M8 11h6"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 1.5rem;">
+                                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Drawing 1</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                                    <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/drawing-2.png', 'Engineering Drawing 2')">
+                                        <img src="media/drawing-2.png" alt="Engineering Drawing 2" class="gallery-image" style="width: 100%; height: 300px; object-fit: contain; background: var(--bg-secondary); display: block; padding: 1rem; transition: transform 0.3s;">
+                                        <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <path d="m21 21-4.35-4.35"></path>
+                                                <path d="M11 8v6M8 11h6"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 1.5rem;">
+                                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Drawing 2</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                                    <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/drawing-3.png', 'Engineering Drawing 3')">
+                                        <img src="media/drawing-3.png" alt="Engineering Drawing 3" class="gallery-image" style="width: 100%; height: 300px; object-fit: contain; background: var(--bg-secondary); display: block; padding: 1rem; transition: transform 0.3s;">
+                                        <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <path d="m21 21-4.35-4.35"></path>
+                                                <path d="M11 8v6M8 11h6"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 1.5rem;">
+                                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Drawing 3</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                                    <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/drawing-4.png', 'Engineering Drawing 4')">
+                                        <img src="media/drawing-4.png" alt="Engineering Drawing 4" class="gallery-image" style="width: 100%; height: 300px; object-fit: contain; background: var(--bg-secondary); display: block; padding: 1rem; transition: transform 0.3s;">
+                                        <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <path d="m21 21-4.35-4.35"></path>
+                                                <path d="M11 8v6M8 11h6"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 1.5rem;">
+                                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Drawing 4</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== DESIGN PROCESS TAB ==================== -->
+            <div id="process" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Design Process Timeline</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <h3>Problem Definition</h3>
+                                <span class="timeline-date">Week 1</span>
+                                <p>
+                                    Analyzed project requirements and identified key system 
+                                    components: authentication, product management, robotics 
+                                    integration, and order processing.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <h3>System Architecture</h3>
+                                <span class="timeline-date">Week 2</span>
+                                <p>
+                                    Designed system flow and divided responsibilities. 
+                                    Established data formats and function interfaces 
+                                    for seamless integration.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <h3>Individual Development</h3>
+                                <span class="timeline-date">Week 3-4</span>
+                                <p>
+                                    Each team member developed their assigned functions. 
+                                    I focused on the complete_order() function for 
+                                    transaction processing and receipt generation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker">4</div>
+                            <div class="timeline-content">
+                                <h3>Integration & Testing</h3>
+                                <span class="timeline-date">Week 5</span>
+                                <p>
+                                    Combined all modules and tested end-to-end functionality 
+                                    with Q-Arm hardware. Resolved data format mismatches 
+                                    and timing issues.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker">5</div>
+                            <div class="timeline-content">
+                                <h3>Refinement</h3>
+                                <span class="timeline-date">Week 6</span>
+                                <p>
+                                    Added error handling, improved UI with ANSI colors, 
+                                    and completed documentation with comprehensive docstrings.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker">✓</div>
+                            <div class="timeline-content">
+                                <h3>Final Submission</h3>
+                                <span class="timeline-date">December 3, 2025</span>
+                                <p>
+                                    Successfully delivered a fully functional warehouse 
+                                    system with all features working as designed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Highlights -->
+                <div class="content-section">
+                    <h2 class="content-title">Code Highlights</h2>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item active">
+                            <button class="accordion-header">
+                                <span>My Code: Order Processing Function</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <pre class="code-block"><code><span class="keyword">def</span> <span class="function">complete_order</span>(userid, product_list):
+    <span class="string">"""
+    Shayan Siddiqui
+    
+    Totals an order, applies a random discount, calculates tax,
+    prints a professional receipt, and writes the order to orders.csv.
+    """</span>
+
+    <span class="comment"># Subtotal</span>
+    subtotal = <span class="number">0</span>
+    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="builtin">range</span>(<span class="builtin">len</span>(product_list)):
+        price = product_list[i][<span class="number">1</span>]  <span class="comment"># product_list[i][1] is the product price</span>
+        subtotal += price
+    
+    <span class="comment"># Random discount tax and final total</span>
+    discount_percent = random.randint(<span class="number">5</span>, <span class="number">50</span>)  <span class="comment"># random discount between 5 and 50%</span>
+    discount_amount = subtotal * (discount_percent / <span class="number">100</span>)
+    subtotal_after_discount = subtotal - discount_amount
+    
+    <span class="comment"># calculates the tax</span>
+    tax_rate = <span class="number">0.13</span>
+    final_total = subtotal_after_discount * (<span class="number">1</span> + tax_rate)
+    
+    <span class="comment"># Count how many orders already exist</span>
+    file = <span class="builtin">open</span>(<span class="string">"orders.csv"</span>, <span class="string">"r"</span>)
+    number_of_orders = <span class="number">0</span>
+    <span class="keyword">for</span> line <span class="keyword">in</span> file:
+        parts = line.split(<span class="string">","</span>)
+        <span class="keyword">if</span> parts[<span class="number">0</span>] == userid:
+            number_of_orders += <span class="number">1</span>
+    file.close()
+
+    <span class="comment"># Writting the new order to orders.csv</span>
+    file = <span class="builtin">open</span>(<span class="string">"orders.csv"</span>, <span class="string">"a"</span>)
+    
+    <span class="comment"># build the CSV line</span>
+    csv_line = userid + <span class="string">","</span> + <span class="builtin">f</span><span class="string">"{final_total:.2f}"</span>
+    
+    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="builtin">range</span>(<span class="builtin">len</span>(product_list)):
+        product_name = product_list[i][<span class="number">0</span>]
+        csv_line = csv_line + <span class="string">","</span> + product_name
+
+    file.write(csv_line + <span class="string">"\n"</span>)
+    file.close()
+
+    <span class="comment"># Professional recipt</span>
+    <span class="builtin">print</span>(<span class="string">"\033[1;36m\n============== YOUR ORDER RECEIPT ================\033[0m"</span>)
+    <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"Customer: {userid}"</span>)
+    <span class="builtin">print</span>(<span class="string">"--------------------------------------------------"</span>)
+    <span class="builtin">print</span>(<span class="string">"Items Purchased:"</span>)
+
+    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="builtin">range</span>(<span class="builtin">len</span>(product_list)):
+        name = product_list[i][<span class="number">0</span>]
+        price = product_list[i][<span class="number">1</span>]
+        <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"  - {name:20}                   ${price:6.2f}"</span>)
+
+    <span class="builtin">print</span>(<span class="string">"--------------------------------------------------"</span>)
+    <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"Subtotal:                                  ${subtotal:6.2f}"</span>)
+    <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"Discount ({discount_percent}%):            -${discount_amount:6.2f}"</span>)
+    <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"Subtotal After Discount:                   ${subtotal_after_discount:6.2f}"</span>)
+    <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"Tax (13%):                                 ${tax_rate*subtotal_after_discount:6.2f}"</span>)
+    <span class="builtin">print</span>(<span class="string">"=================================================="</span>)
+    <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"\033[1mFINAL TOTAL:                               ${final_total:6.2f}\033[0m"</span>)
+    <span class="builtin">print</span>(<span class="string">"=================================================="</span>)
+
+    <span class="comment"># Order message</span>
+    <span class="builtin">print</span>(<span class="builtin">f</span><span class="string">"\nYou have now made {number_of_orders + 1} orders so far.\n"</span>)
+
+    <span class="keyword">return</span></code></pre>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Q-Arm Packing Function</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <pre class="code-block"><code><span class="keyword">def</span> <span class="function">pack</span>():
+    <span class="string">"""
+    This function closes the gripper and grabs the object, 
+    it then moves the object to the packaging station 
+    and returns home
+    """</span>
+    arm.rotate_gripper(<span class="number">-90</span>)
+    sleep(<span class="number">1</span>)
+    arm.rotate_gripper(<span class="number">30</span>)
+    arm.rotate_gripper(<span class="number">-90</span>)
+    sleep(<span class="number">1</span>)
+    arm.rotate_gripper(<span class="number">30</span>)
+    arm.rotate_gripper(<span class="number">-90</span>)
+    sleep(<span class="number">1</span>)
+    arm.rotate_gripper(<span class="number">30</span>)
+    arm.rotate_gripper(<span class="number">-90</span>)
+    sleep(<span class="number">1</span>)
+    arm.rotate_shoulder(<span class="number">-30</span>)
+    arm.home()
+    arm.set_arm_position(DEPOSIT_POSITION)
+    arm.rotate_gripper(<span class="number">360</span>)  <span class="comment"># Release object</span>
+    arm.home()</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Password Security with bcrypt (Shuja Wazir)</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <pre class="code-block"><code><span class="comment"># Hash password securely during sign-up</span>
+hash = bcrypt.hashpw(
+    password.encode(<span class="string">'utf-8'</span>),
+    bcrypt.gensalt()
+).decode(<span class="string">'utf8'</span>)
+
+<span class="comment"># Write to users.csv</span>
+file = <span class="builtin">open</span>(<span class="string">"users.csv"</span>, mode=<span class="string">'a'</span>)
+file.write(<span class="string">"\n"</span> + userid + <span class="string">","</span> + hash)
+file.close()
+
+<span class="comment"># Verify password on login (Jennifer Desbarats)</span>
+<span class="keyword">if</span> bcrypt.checkpw(
+    password.encode(<span class="string">'utf-8'</span>), 
+    stored_hash.encode(<span class="string">'utf-8'</span>)
+):
+    <span class="builtin">print</span>(<span class="string">"\033[1;32mLogin successful!\033[0m"</span>)
+    logged_in = <span class="builtin">True</span>
+<span class="keyword">else</span>:
+    <span class="builtin">print</span>(<span class="string">"\033[1;31mIncorrect password. Try again.\033[0m\n"</span>)</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Product Lookup & Filtering (Kian Diggle)</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <pre class="code-block"><code><span class="keyword">def</span> <span class="function">lookup_products</span>(products):
+    <span class="string">"""
+    Kian Diggle
+    Look up products filters the scanned list of items. 
+    It catches errors like duplicate items and compares 
+    scanned products with accepted items.
+    """</span>
+    file = <span class="builtin">open</span>(<span class="string">"products.csv"</span>)
+    csv_contents = []  <span class="comment"># list of accepted items</span>
+    total_contents = []  <span class="comment"># list of filtered contents</span>
+    
+    <span class="keyword">for</span> line <span class="keyword">in</span> file:
+        line_list = line.strip().split(<span class="string">","</span>)
+        line_list[<span class="number">1</span>] = <span class="builtin">float</span>(line_list[<span class="number">1</span>])  <span class="comment"># convert price to float</span>
+        csv_contents.append(line_list)
+    file.close()
+    
+    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="builtin">range</span>(<span class="builtin">len</span>(products)):
+        found_product = <span class="builtin">False</span>
+        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="builtin">range</span>(<span class="builtin">len</span>(csv_contents) - <span class="number">1</span>):
+            <span class="keyword">if</span> products[i] == csv_contents[j][<span class="number">0</span>]:
+                total_contents.append(csv_contents[j])
+                found_product = <span class="builtin">True</span>
+        <span class="keyword">if</span> found_product == <span class="builtin">False</span>:
+            <span class="builtin">print</span>(<span class="string">"Warning: Product not found"</span>)
+    
+    <span class="keyword">return</span> total_contents</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Customer Summary (Habibah Aboueleinin)</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <pre class="code-block"><code><span class="keyword">def</span> <span class="function">customer_summary</span>(userid):
+    <span class="string">"""
+    Habibah Aboueleinin
+    Customer summary summarises all orders completed by the customer.
+    It prints a professional receipt and keeps track of total orders.
+    """</span>
+    filename = <span class="string">'orders.csv'</span>
+    total_orders = <span class="number">0</span>
+    total_spent = <span class="number">0</span>
+    product_counts = {}
+    
+    <span class="comment"># Read each order from CSV</span>
+    <span class="keyword">with</span> <span class="builtin">open</span>(filename, <span class="string">'r'</span>) <span class="keyword">as</span> file:
+        reader = csv.reader(file)
+        <span class="keyword">for</span> row <span class="keyword">in</span> reader:
+            <span class="keyword">if</span> <span class="builtin">len</span>(row) >= <span class="number">2</span> <span class="keyword">and</span> row[<span class="number">0</span>] == userid:
+                total_orders += <span class="number">1</span>
+                total_spent += <span class="builtin">float</span>(row[<span class="number">1</span>])
+                <span class="keyword">for</span> product <span class="keyword">in</span> row[<span class="number">2</span>:]:
+                    <span class="keyword">if</span> product <span class="keyword">not</span> <span class="keyword">in</span> product_counts:
+                        product_counts[product] = <span class="number">0</span>
+                    product_counts[product] += <span class="number">1</span>
+    
+    <span class="comment"># Print formatted summary with ANSI colors</span>
+    <span class="builtin">print</span>(<span class="string">f"\033[1;36m{'=' * 50}\033[0m"</span>)
+    <span class="builtin">print</span>(<span class="string">f"\033[1;36m{'CUSTOMER ORDER SUMMARY':^50}\033[0m"</span>)
+    <span class="builtin">print</span>(<span class="string">f"\033[1;36m{'=' * 50}\033[0m"</span>)
+    <span class="builtin">print</span>(<span class="string">f"\033[1m{'User ID:':<20}\033[0m {userid:>29}"</span>)
+    <span class="builtin">print</span>(<span class="string">f"\033[1m{'Total Orders:':<20}\033[0m {total_orders:>29}"</span>)
+    <span class="builtin">print</span>(<span class="string">f"\033[1m{'Total Spent:':<20}\033[0m{f'${total_spent:,.2f}':>30}"</span>)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== SKILLS TAB ==================== -->
+            <div id="skills" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Skills Developed</h2>
+                    
+                    <div class="skills-category">
+                        <h3 class="skills-heading">
+                            <span class="skills-icon">💻</span>
+                            Technical Skills
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python Programming</span>
+                                    <span class="skill-level advanced">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                                <p class="skill-desc">
+                                    Strengthened proficiency in Python including file I/O, 
+                                    functions, loops, string formatting, and working with 
+                                    external libraries like bcrypt.
+                                </p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Robotics & Hardware Integration</span>
+                                    <span class="skill-level intermediate">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                                <p class="skill-desc">
+                                    Learned to control Q-Arm movements, understand coordinate 
+                                    systems, and synchronize software timing with physical operations.
+                                </p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Security Implementation</span>
+                                    <span class="skill-level foundational">Foundational</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%;"></div>
+                                </div>
+                                <p class="skill-desc">
+                                    Implemented industry-standard password hashing with bcrypt 
+                                    and learned principles of secure authentication systems.
+                                </p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Data Management</span>
+                                    <span class="skill-level intermediate">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                                <p class="skill-desc">
+                                    Worked with CSV files for persistent storage, implementing 
+                                    proper read/write operations and data validation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="skills-heading">
+                            <span class="skills-icon">🧠</span>
+                            Professional Skills
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Team Collaboration</span>
+                                    <span class="skill-level strong">Strong</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                                <p class="skill-desc">
+                                    Coordinated with 5 team members, divided tasks effectively, 
+                                    and integrated individual components into a cohesive system.
+                                </p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-level strong">Strong</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                                <p class="skill-desc">
+                                    Developed debugging skills and learned to break complex 
+                                    problems into smaller, testable components.
+                                </p>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Project Management</span>
+                                    <span class="skill-level improved">Improved</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                                <p class="skill-desc">
+                                    Balanced project deadlines with coursework while ensuring 
+                                    quality deliverables and thorough testing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <span class="highlight">Shayan Siddiqui</span>
+                </p>
+                <p class="footer-subtext">© 2026 • McMaster University • ENGINEER 1P13</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close lightbox">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-image" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Lightbox functionality
+        function openLightbox(imageSrc, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            
+            lightboxImage.src = imageSrc;
+            lightboxCaption.textContent = caption;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === 'lightbox' || event.target.closest('.lightbox-close')) {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const lightbox = document.getElementById('lightbox');
+                if (lightbox.style.display === 'flex') {
+                    closeLightbox({ target: lightbox });
+                }
+            }
+        });
+
+        // Add hover effects to image wrappers
+        document.querySelectorAll('.image-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('mouseenter', function() {
+                const overlay = this.querySelector('.zoom-overlay');
+                const img = this.querySelector('.gallery-image');
+                if (overlay) overlay.style.opacity = '1';
+                if (img) img.style.transform = 'scale(1.05)';
+            });
+            
+            wrapper.addEventListener('mouseleave', function() {
+                const overlay = this.querySelector('.zoom-overlay');
+                const img = this.querySelector('.gallery-image');
+                if (overlay) overlay.style.opacity = '0';
+                if (img) img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
+
