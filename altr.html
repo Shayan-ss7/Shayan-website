@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>A.L.T.R. - Adaptable Litter Taking Robot | Shayan Siddiqui</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Shayan<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="index.html#coursework" class="nav-link">Course Work</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link animate-on-scroll">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>Back to Personal Projects</span>
+            </a>
+            
+            <div class="project-hero-content">
+                <div class="project-meta animate-on-scroll">
+                    <span class="project-tag" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(34, 211, 238, 0.2)); border-color: rgba(168, 85, 247, 0.4);">Personal Project</span>
+                    <span class="project-date">2024 • Tech Under 20 Winner</span>
+                </div>
+                <h1 class="project-hero-title animate-on-scroll">
+                    A.L.T.R.<br>
+                    <span class="gradient-text">Adaptable Litter Taking Robot</span>
+                </h1>
+                <p class="project-hero-description animate-on-scroll">
+                    An autonomous robotic system designed to identify, collect, and transport litter in public spaces. 
+                    What started as a Grade 11 I-STEM engineering project evolved into an award-winning entry at the 
+                    Tech Under 20 entrepreneurship competition, winning Best Tech Team Award (2024).
+                </p>
+                <div class="project-hero-tech animate-on-scroll">
+                    <span>Arduino</span>
+                    <span>C/C++</span>
+                    <span>Robotics</span>
+                    <span>3D Printing</span>
+                    <span>Embedded Systems</span>
+                    <span>DC Motors</span>
+                    <span>Servo Motors</span>
+                </div>
+                <div class="project-hero-stats animate-on-scroll">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">3</span>
+                        <span class="hero-stat-label">Versions</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">🏆</span>
+                        <span class="hero-stat-label">Best Tech Team</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">2024</span>
+                        <span class="hero-stat-label">Tech Under 20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="project-main">
+        <div class="container">
+            <!-- Project Journey -->
+            <section class="content-section" style="margin-bottom: 4rem;">
+                <h2 class="content-title">Project Journey</h2>
+                <p class="lead-text">
+                    A.L.T.R. began as a Grade 11 I-STEM engineering project focused on designing a practical solution 
+                    to environmental litter collection. After completing the initial project in class, my teammate and 
+                    I enjoyed working on it so much that we decided to continue developing the idea independently. 
+                    This eventually led us to submit it to the Tech Under 20 (TU20) entrepreneurship competition.
+                </p>
+
+                <!-- Version 1 -->
+                <div style="margin-top: 3rem; padding: 2rem; background: var(--bg-card); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <h3 style="font-size: 1.8rem; font-family: var(--font-display); color: var(--text-primary); margin: 0;">V1</h3>
+                        <span style="padding: 0.4rem 1rem; background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 20px; font-size: 0.85rem; color: var(--accent-primary);">School Project</span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        The initial version was built during our Grade 11 I-STEM engineering class. This prototype featured 
+                        a cardboard chassis with a 3D-printed claw mechanism. The control system was based on a micro:bit 
+                        microcontroller, with DC motors powering the wheels and servo motors controlling the claw's movement. 
+                        This version demonstrated the core concept and validated our approach to autonomous litter collection.
+                    </p>
+                    <div class="project-tech" style="margin-top: 1.5rem;">
+                        <span>micro:bit</span>
+                        <span>DC Motors</span>
+                        <span>Servo Motors</span>
+                        <span>3D Printed Claw</span>
+                        <span>Cardboard Chassis</span>
+                    </div>
+                </div>
+
+                <!-- Version 2 -->
+                <div style="margin-top: 2rem; padding: 2rem; background: var(--bg-card); border-radius: 16px; border: 2px solid rgba(168, 85, 247, 0.3); position: relative;">
+                    <div style="position: absolute; top: -15px; right: 2rem; background: linear-gradient(135deg, rgba(168, 85, 247, 0.95), rgba(34, 211, 238, 0.95)); color: var(--bg-primary); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);">
+                        🏆 Competition Winner
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; margin-top: 0.5rem;">
+                        <h3 style="font-size: 1.8rem; font-family: var(--font-display); color: var(--text-primary); margin: 0;">V2</h3>
+                        <span style="padding: 0.4rem 1rem; background: rgba(34, 211, 238, 0.1); border: 1px solid rgba(34, 211, 238, 0.3); border-radius: 20px; font-size: 0.85rem; color: var(--accent-secondary);">Tech Under 20</span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        For Version 2, we moved away from the cardboard chassis and 3D-printed a professional chassis for the robot. 
+                        We also upgraded the control system to an Arduino microcontroller. In this version, we focused primarily on 
+                        improving movement and body design, with less emphasis on the claw mechanism. However, after finalizing the 
+                        new chassis, we discovered that the old claw design was incompatible with the new body structure.
+                    </p>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        With the Tech Under 20 competition approaching in just one week, we didn't have time to design an elaborate 
+                        claw arm like the previous version. Instead, we quickly 3D-printed a simplified, smaller claw that worked 
+                        with the new body design. Beyond the technical development, we also had to create a comprehensive business 
+                        pitch and proposal, as TU20 is an entrepreneurship competition focusing on real-world marketability and impact. 
+                        This version, along with our business presentation, won us the <strong style="color: var(--accent-primary);">Best Tech Team Award</strong> at the 2024 Tech Under 20 Cup.
+                    </p>
+                    <div class="project-tech" style="margin-top: 1.5rem;">
+                        <span>Arduino</span>
+                        <span>C/C++</span>
+                        <span>DC Motors</span>
+                        <span>3D Printed Chassis</span>
+                        <span>3D Printed Claw</span>
+                        <span>Business Pitch</span>
+                    </div>
+                </div>
+
+                <!-- Version 3 -->
+                <div style="margin-top: 2rem; padding: 2rem; background: var(--bg-card); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); opacity: 0.9;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <h3 style="font-size: 1.8rem; font-family: var(--font-display); color: var(--text-primary); margin: 0;">V3</h3>
+                        <span style="padding: 0.4rem 1rem; background: rgba(255, 193, 7, 0.1); border: 1px solid rgba(255, 193, 7, 0.3); border-radius: 20px; font-size: 0.85rem; color: #FFC107;">In Development</span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Version 3 is currently being developed by my teammate <strong style="color: var(--text-primary);">Subu</strong>, 
+                        who has taken over all operations as he wants to pursue this project even further. Subu is continuing the 
+                        development independently, building upon the foundation we established together. I'm excited to see how 
+                        he takes A.L.T.R. to the next level.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://www.linkedin.com/in/sububalakumar/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1.5rem; background: var(--gradient-primary); color: var(--bg-primary); text-decoration: none; border-radius: 8px; font-weight: 600; transition: var(--transition-medium);">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <span>Connect with Subu on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Media Gallery -->
+            <section class="content-section" style="margin-bottom: 4rem;">
+                <h2 class="content-title">Media Gallery</h2>
+                
+                <!-- V1 Photos -->
+                <div style="margin-bottom: 3rem;">
+                    <h3 style="font-size: 1.3rem; font-family: var(--font-display); color: var(--text-primary); margin-bottom: 1.5rem;">Version 1 - Prototype Photos</h3>
+                    <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                        <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                            <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/altr/v1-photo-1.jpg', 'A.L.T.R. V1 - Cardboard Chassis with 3D Printed Claw')">
+                                <img src="media/altr/v1-photo-1.jpg" alt="A.L.T.R. V1 Prototype" class="gallery-image" style="width: 100%; height: 250px; object-fit: cover; display: block; transition: transform 0.3s;">
+                                <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">V1 Prototype - Side View</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                            <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/altr/v1-photo-2.jpg', 'A.L.T.R. V1 - Side View')">
+                                <img src="media/altr/v1-photo-2.jpg" alt="A.L.T.R. V1 Side View" class="gallery-image" style="width: 100%; height: 250px; object-fit: cover; display: block; transition: transform 0.3s;">
+                                <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">V1 Prototype - Top View</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                            <div class="image-wrapper" style="position: relative; cursor: pointer;" onclick="openLightbox('media/altr/v1-photo-3.jpg', 'A.L.T.R. V1 - Claw Mechanism')">
+                                <img src="media/altr/v1-photo-3.jpg" alt="A.L.T.R. V1 Claw Detail" class="gallery-image" style="width: 100%; height: 250px; object-fit: cover; display: block; transition: transform 0.3s;">
+                                <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">V1 Prototype - Claw Detail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V2 Videos -->
+                <div>
+                    <h3 style="font-size: 1.3rem; font-family: var(--font-display); color: var(--text-primary); margin-bottom: 1.5rem;">Version 2 - Competition Videos</h3>
+                    <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+                        <div style="background: var(--bg-card); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1);">
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-bottom: 1rem;">
+                                <video controls preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;">
+                                    <source src="media/altr/v2-video-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; text-align: center; margin: 0;">V2 - Robot Obstical Demo</p>
+                        </div>
+                        <div style="background: var(--bg-card); border-radius: 12px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.1);">
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-bottom: 1rem;">
+                                <video controls preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;">
+                                    <source src="media/altr/v2-video-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; text-align: center; margin: 0;">V2 - Robot Movement Demo</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificate & Documents -->
+            <section class="content-section" style="margin-bottom: 4rem;">
+                <h2 class="content-title">Competition Documents & Certificate</h2>
+                <div class="content-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <div style="padding: 2rem; background: var(--bg-card); border-radius: 16px; border: 2px solid rgba(168, 85, 247, 0.3); text-align: center;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🏆</div>
+                            <h3 style="font-size: 1.5rem; font-family: var(--font-display); color: var(--text-primary); margin-bottom: 1rem;">Best Tech Team Award</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Tech Under 20 Cup 2024</p>
+                            <div class="image-wrapper" style="position: relative; cursor: pointer; margin: 0 auto; max-width: 100%;" onclick="openLightbox('media/altr/certificate.jpg', 'Best Tech Team Award - Tech Under 20 2024')">
+                                <img src="media/altr/certificate.jpg" alt="Best Tech Team Certificate" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
+                                <div class="zoom-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; border-radius: 8px;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 40px; height: 40px;">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="padding: 2rem; background: var(--bg-card); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05);">
+                            <h3 style="font-size: 1.3rem; font-family: var(--font-display); color: var(--text-primary); margin-bottom: 1.5rem;">Competition Documents</h3>
+                            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                                <a href="media/altr/business-plan.pdf" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 1rem; padding: 1.25rem; background: var(--bg-secondary); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-decoration: none; transition: var(--transition-medium); hover:border-color: var(--accent-primary);">
+                                    <div style="width: 50px; height: 50px; background: var(--gradient-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--bg-primary)" stroke-width="2" width="24" height="24">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                                        </svg>
+                                    </div>
+                                    <div style="flex: 1;">
+                                        <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem;">Business Plan</div>
+                                        <div style="font-size: 0.85rem; color: var(--text-secondary);">TU20 Competition Submission</div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" style="color: var(--text-secondary);">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="media/altr/business-proposal.pdf" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 1rem; padding: 1.25rem; background: var(--bg-secondary); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-decoration: none; transition: var(--transition-medium); hover:border-color: var(--accent-primary);">
+                                    <div style="width: 50px; height: 50px; background: var(--gradient-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--bg-primary)" stroke-width="2" width="24" height="24">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                                        </svg>
+                                    </div>
+                                    <div style="flex: 1;">
+                                        <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem;">Business Proposal</div>
+                                        <div style="font-size: 0.85rem; color: var(--text-secondary);">TU20 Competition Submission</div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" style="color: var(--text-secondary);">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Code Section -->
+            <section class="content-section" style="margin-bottom: 4rem;">
+                <h2 class="content-title">Control System Code</h2>
+                <p class="lead-text">
+                    The robot's control system was programmed in Arduino C/C++, focusing on motor control logic, 
+                    sensor input handling, and reliable task sequencing. The system includes obstacle avoidance, 
+                    object detection, precise movement control, and a multi-stage pickup/drop sequence.
+                </p>
+                <div style="margin-top: 2rem; background: var(--bg-card); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden;">
+                    <button id="code-toggle" onclick="toggleCode()" style="width: 100%; padding: 1.25rem 1.5rem; background: transparent; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer; color: var(--text-primary); font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; transition: var(--transition-medium);">
+                        <span style="display: flex; align-items: center; gap: 0.75rem;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" id="code-icon" style="transition: transform 0.3s ease;">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                            <span>View Arduino Control Code</span>
+                        </span>
+                        <span style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 400;">Click to expand</span>
+                    </button>
+                    <div id="code-content" style="display: none; border-top: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; max-height: 600px; overflow-y: auto;">
+                        <div class="code-block" style="background: var(--bg-secondary); border-radius: 8px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.05);">
+                            <pre style="margin: 0; overflow-x: auto;"><code class="language-cpp">/*
+ * A.L.T.R. - Adaptable Litter Taking Robot
+ * Arduino Control System - Version 2
+ * Developed for Tech Under 20 Competition 2024
+ * 
+ * Features:
+ * - Dual motor control with speed modulation
+ * - Ultrasonic obstacle detection
+ * - Servo-controlled claw mechanism
+ * - State machine for operation sequencing
+ * - Error handling and safety checks
+ */
+
+#include &lt;Servo.h&gt;
+
+// ========================================
+// PIN DEFINITIONS
+// ========================================
+// Motor control pins (L298N driver)
+const int LEFT_MOTOR_ENA = 5;      // Enable pin for left motor PWM
+const int LEFT_MOTOR_IN1 = 6;      // Left motor direction control
+const int LEFT_MOTOR_IN2 = 7;
+const int RIGHT_MOTOR_ENB = 10;    // Enable pin for right motor PWM
+const int RIGHT_MOTOR_IN3 = 8;     // Right motor direction control
+const int RIGHT_MOTOR_IN4 = 9;
+
+// Servo control pins
+const int CLAW_SERVO_PIN = 3;      // Claw open/close servo
+const int LIFT_SERVO_PIN = 11;     // Claw lift/lower servo
+
+// Sensor pins
+const int ULTRASONIC_TRIG = 12;    // Ultrasonic sensor trigger
+const int ULTRASONIC_ECHO = 13;    // Ultrasonic sensor echo
+const int IR_SENSOR_LEFT = A0;     // Left IR sensor for line following
+const int IR_SENSOR_RIGHT = A1;    // Right IR sensor for line following
+
+// Status LED
+const int STATUS_LED = 2;
+
+// ========================================
+// SYSTEM CONSTANTS
+// ========================================
+// Motor speed parameters
+const int BASE_SPEED = 180;        // Base forward speed (0-255)
+const int TURN_SPEED = 140;        // Turning speed
+const int SLOW_SPEED = 120;        // Slow movement for precision
+const int SPEED_INCREMENT = 10;    // Speed adjustment increment
+
+// Distance thresholds (cm)
+const int OBSTACLE_DISTANCE = 25;  // Stop and avoid obstacle
+const int OBJECT_DETECTION_DISTANCE = 15;  // Object within pickup range
+const int MIN_DETECTION_DISTANCE = 3;      // Minimum valid distance
+const int MAX_DETECTION_DISTANCE = 400;    // Maximum sensor range
+
+// Servo positions (degrees)
+const int CLAW_OPEN_POS = 30;      // Claw fully open
+const int CLAW_CLOSE_POS = 120;    // Claw fully closed
+const int CLAW_PARTIAL_CLOSE = 90; // Partial close for gripping
+const int LIFT_UP_POS = 160;       // Claw lifted position
+const int LIFT_DOWN_POS = 40;      // Claw lowered position
+const int LIFT_MID_POS = 100;      // Intermediate position
+
+// Timing constants (ms)
+const int SCAN_DELAY = 300;        // Time to scan area
+const int PICKUP_DELAY = 800;      // Delay between pickup steps
+const int MOVEMENT_DELAY = 50;     // Delay between movement commands
+const int SENSOR_READ_DELAY = 50;  // Delay between sensor reads
+
+// Operation states
+enum RobotState {
+    STATE_IDLE,
+    STATE_SCANNING,
+    STATE_MOVING_FORWARD,
+    STATE_DETECTING_OBJECT,
+    STATE_PICKING_UP,
+    STATE_MOVING_TO_DISPOSAL,
+    STATE_DROPPING,
+    STATE_AVOIDING_OBSTACLE,
+    STATE_ERROR
+};
+
+// ========================================
+// GLOBAL VARIABLES
+// ========================================
+Servo clawServo;
+Servo liftServo;
+
+RobotState currentState = STATE_IDLE;
+RobotState previousState = STATE_IDLE;
+
+unsigned long lastStateChange = 0;
+unsigned long operationStartTime = 0;
+int objectsCollected = 0;
+int scanCount = 0;
+bool systemInitialized = false;
+
+// Movement tracking
+int currentSpeed = BASE_SPEED;
+bool isMoving = false;
+
+// Sensor readings
+long lastDistanceReading = 0;
+long filteredDistance = 0;
+
+// ========================================
+// SETUP FUNCTION
+// ========================================
+void setup() {
+    Serial.begin(9600);
+    Serial.println("========================================");
+    Serial.println("A.L.T.R. System Initializing...");
+    Serial.println("Version 2.0 - Competition Build");
+    Serial.println("========================================");
+    
+    // Initialize motor pins
+    pinMode(LEFT_MOTOR_IN1, OUTPUT);
+    pinMode(LEFT_MOTOR_IN2, OUTPUT);
+    pinMode(RIGHT_MOTOR_IN3, OUTPUT);
+    pinMode(RIGHT_MOTOR_IN4, OUTPUT);
+    pinMode(LEFT_MOTOR_ENA, OUTPUT);
+    pinMode(RIGHT_MOTOR_ENB, OUTPUT);
+    
+    // Initialize sensor pins
+    pinMode(ULTRASONIC_TRIG, OUTPUT);
+    pinMode(ULTRASONIC_ECHO, INPUT);
+    pinMode(IR_SENSOR_LEFT, INPUT);
+    pinMode(IR_SENSOR_RIGHT, INPUT);
+    pinMode(STATUS_LED, OUTPUT);
+    
+    // Initialize servos
+    clawServo.attach(CLAW_SERVO_PIN);
+    liftServo.attach(LIFT_SERVO_PIN);
+    
+    // Calibrate servos to initial positions
+    initializeServos();
+    
+    // Test sequence
+    performSystemCheck();
+    
+    // Start in scanning state
+    currentState = STATE_SCANNING;
+    lastStateChange = millis();
+    systemInitialized = true;
+    
+    Serial.println("System Ready. Beginning operation...");
+    Serial.println("========================================");
+    digitalWrite(STATUS_LED, HIGH);
+}
+
+// ========================================
+// MAIN LOOP
+// ========================================
+void loop() {
+    if (!systemInitialized) {
+        errorState();
+        return;
+    }
+    
+    // State machine execution
+    switch (currentState) {
+        case STATE_SCANNING:
+            performScan();
+            break;
+            
+        case STATE_MOVING_FORWARD:
+            moveForward();
+            checkForObstacles();
+            break;
+            
+        case STATE_DETECTING_OBJECT:
+            if (detectObject()) {
+                changeState(STATE_PICKING_UP);
+            } else {
+                changeState(STATE_SCANNING);
+            }
+            break;
+            
+        case STATE_PICKING_UP:
+            executePickupSequence();
+            break;
+            
+        case STATE_MOVING_TO_DISPOSAL:
+            navigateToDisposal();
+            break;
+            
+        case STATE_DROPPING:
+            executeDropSequence();
+            break;
+            
+        case STATE_AVOIDING_OBSTACLE:
+            avoidObstacle();
+            break;
+            
+        case STATE_ERROR:
+            errorState();
+            break;
+            
+        default:
+            changeState(STATE_SCANNING);
+            break;
+    }
+    
+    // Update status LED
+    updateStatusLED();
+    
+    delay(MOVEMENT_DELAY);
+}
+
+// ========================================
+// STATE MANAGEMENT
+// ========================================
+void changeState(RobotState newState) {
+    if (newState != currentState) {
+        previousState = currentState;
+        currentState = newState;
+        lastStateChange = millis();
+        Serial.print("State changed to: ");
+        Serial.println(getStateName(newState));
+    }
+}
+
+String getStateName(RobotState state) {
+    switch (state) {
+        case STATE_IDLE: return "IDLE";
+        case STATE_SCANNING: return "SCANNING";
+        case STATE_MOVING_FORWARD: return "MOVING_FORWARD";
+        case STATE_DETECTING_OBJECT: return "DETECTING_OBJECT";
+        case STATE_PICKING_UP: return "PICKING_UP";
+        case STATE_MOVING_TO_DISPOSAL: return "MOVING_TO_DISPOSAL";
+        case STATE_DROPPING: return "DROPPING";
+        case STATE_AVOIDING_OBSTACLE: return "AVOIDING_OBSTACLE";
+        case STATE_ERROR: return "ERROR";
+        default: return "UNKNOWN";
+    }
+}
+
+// ========================================
+// SERVO CONTROL
+// ========================================
+void initializeServos() {
+    Serial.println("Initializing servos...");
+    clawServo.write(CLAW_OPEN_POS);
+    delay(500);
+    liftServo.write(LIFT_UP_POS);
+    delay(500);
+    Serial.println("Servos initialized");
+}
+
+void setClawPosition(int position, int speed = 15) {
+    int currentPos = clawServo.read();
+    if (position > currentPos) {
+        for (int pos = currentPos; pos <= position; pos++) {
+            clawServo.write(pos);
+            delay(speed);
+        }
+    } else {
+        for (int pos = currentPos; pos >= position; pos--) {
+            clawServo.write(pos);
+            delay(speed);
+        }
+    }
+}
+
+void setLiftPosition(int position, int speed = 15) {
+    int currentPos = liftServo.read();
+    if (position > currentPos) {
+        for (int pos = currentPos; pos <= position; pos++) {
+            liftServo.write(pos);
+            delay(speed);
+        }
+    } else {
+        for (int pos = currentPos; pos >= position; pos--) {
+            liftServo.write(pos);
+            delay(speed);
+        }
+    }
+}
+
+// ========================================
+// MOTOR CONTROL
+// ========================================
+void setMotorSpeed(int leftSpeed, int rightSpeed) {
+    // Constrain speeds to valid PWM range
+    leftSpeed = constrain(leftSpeed, -255, 255);
+    rightSpeed = constrain(rightSpeed, -255, 255);
+    
+    // Left motor control
+    if (leftSpeed > 0) {
+        digitalWrite(LEFT_MOTOR_IN1, HIGH);
+        digitalWrite(LEFT_MOTOR_IN2, LOW);
+        analogWrite(LEFT_MOTOR_ENA, abs(leftSpeed));
+    } else if (leftSpeed < 0) {
+        digitalWrite(LEFT_MOTOR_IN1, LOW);
+        digitalWrite(LEFT_MOTOR_IN2, HIGH);
+        analogWrite(LEFT_MOTOR_ENA, abs(leftSpeed));
+    } else {
+        digitalWrite(LEFT_MOTOR_IN1, LOW);
+        digitalWrite(LEFT_MOTOR_IN2, LOW);
+        analogWrite(LEFT_MOTOR_ENA, 0);
+    }
+    
+    // Right motor control
+    if (rightSpeed > 0) {
+        digitalWrite(RIGHT_MOTOR_IN3, HIGH);
+        digitalWrite(RIGHT_MOTOR_IN4, LOW);
+        analogWrite(RIGHT_MOTOR_ENB, abs(rightSpeed));
+    } else if (rightSpeed < 0) {
+        digitalWrite(RIGHT_MOTOR_IN3, LOW);
+        digitalWrite(RIGHT_MOTOR_IN4, HIGH);
+        analogWrite(RIGHT_MOTOR_ENB, abs(rightSpeed));
+    } else {
+        digitalWrite(RIGHT_MOTOR_IN3, LOW);
+        digitalWrite(RIGHT_MOTOR_IN4, LOW);
+        analogWrite(RIGHT_MOTOR_ENB, 0);
+    }
+    
+    isMoving = (leftSpeed != 0 || rightSpeed != 0);
+}
+
+void moveForward() {
+    setMotorSpeed(currentSpeed, currentSpeed);
+}
+
+void moveBackward(int duration = 1000) {
+    setMotorSpeed(-SLOW_SPEED, -SLOW_SPEED);
+    delay(duration);
+    stopMotors();
+}
+
+void turnLeft(int angle = 45) {
+    // Approximate turning based on angle
+    int turnTime = map(angle, 0, 360, 0, 800);
+    setMotorSpeed(-TURN_SPEED, TURN_SPEED);
+    delay(turnTime);
+    stopMotors();
+}
+
+void turnRight(int angle = 45) {
+    int turnTime = map(angle, 0, 360, 0, 800);
+    setMotorSpeed(TURN_SPEED, -TURN_SPEED);
+    delay(turnTime);
+    stopMotors();
+}
+
+void stopMotors() {
+    setMotorSpeed(0, 0);
+    isMoving = false;
+}
+
+void pivotTurnLeft() {
+    setMotorSpeed(-TURN_SPEED, TURN_SPEED);
+}
+
+void pivotTurnRight() {
+    setMotorSpeed(TURN_SPEED, -TURN_SPEED);
+}
+
+// ========================================
+// ULTRASONIC SENSOR
+// ========================================
+long readUltrasonicDistance() {
+    // Clear trigger pin
+    digitalWrite(ULTRASONIC_TRIG, LOW);
+    delayMicroseconds(2);
+    
+    // Send 10us pulse to trigger
+    digitalWrite(ULTRASONIC_TRIG, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(ULTRASONIC_TRIG, LOW);
+    
+    // Read echo pulse duration
+    long duration = pulseIn(ULTRASONIC_ECHO, HIGH, 30000); // 30ms timeout
+    
+    // Calculate distance in cm
+    long distance = (duration / 2) / 29.1;
+    
+    // Validate reading
+    if (distance < MIN_DETECTION_DISTANCE || distance > MAX_DETECTION_DISTANCE) {
+        return -1; // Invalid reading
+    }
+    
+    return distance;
+}
+
+long getFilteredDistance(int samples = 5) {
+    long sum = 0;
+    int validReadings = 0;
+    
+    for (int i = 0; i < samples; i++) {
+        long reading = readUltrasonicDistance();
+        if (reading > 0) {
+            sum += reading;
+            validReadings++;
+        }
+        delay(20);
+    }
+    
+    if (validReadings > 0) {
+        filteredDistance = sum / validReadings;
+        return filteredDistance;
+    }
+    
+    return -1; // No valid readings
+}
+
+bool detectObject() {
+    long distance = getFilteredDistance(3);
+    if (distance > 0) {
+        lastDistanceReading = distance;
+        return (distance >= MIN_DETECTION_DISTANCE && distance <= OBJECT_DETECTION_DISTANCE);
+    }
+    return false;
+}
+
+bool checkForObstacles() {
+    long distance = readUltrasonicDistance();
+    if (distance > 0 && distance < OBSTACLE_DISTANCE) {
+        changeState(STATE_AVOIDING_OBSTACLE);
+        return true;
+    }
+    return false;
+}
+
+// ========================================
+// OPERATION SEQUENCES
+// ========================================
+void performScan() {
+    Serial.println("Scanning area for objects...");
+    scanCount++;
+    
+    // Rotate left to scan
+    pivotTurnLeft();
+    delay(SCAN_DELAY);
+    stopMotors();
+    delay(200);
+    
+    // Check for objects
+    if (detectObject()) {
+        Serial.println("Object detected!");
+        changeState(STATE_DETECTING_OBJECT);
+    } else {
+        // Rotate back
+        pivotTurnRight();
+        delay(SCAN_DELAY);
+        stopMotors();
+        delay(200);
+        
+        // If no object found after multiple scans, move forward
+        if (scanCount > 3) {
+            scanCount = 0;
+            changeState(STATE_MOVING_FORWARD);
+        }
+    }
+}
+
+void executePickupSequence() {
+    Serial.println("=== Pickup Sequence Initiated ===");
+    stopMotors();
+    delay(300);
+    
+    // Step 1: Position robot closer to object
+    Serial.println("Positioning for pickup...");
+    long distance = getFilteredDistance();
+    if (distance > OBJECT_DETECTION_DISTANCE) {
+        moveForward();
+        delay(map(distance, OBJECT_DETECTION_DISTANCE, OBSTACLE_DISTANCE, 200, 800));
+        stopMotors();
+    }
+    
+    // Step 2: Lower the claw
+    Serial.println("Lowering claw...");
+    setLiftPosition(LIFT_DOWN_POS, 12);
+    delay(PICKUP_DELAY);
+    
+    // Step 3: Close claw gradually for better grip
+    Serial.println("Closing claw...");
+    setClawPosition(CLAW_PARTIAL_CLOSE, 8);
+    delay(300);
+    setClawPosition(CLAW_CLOSE_POS, 10);
+    delay(500);
+    
+    // Step 4: Verify grip (optional - could use sensor)
+    delay(200);
+    
+    // Step 5: Lift the claw
+    Serial.println("Lifting object...");
+    setLiftPosition(LIFT_UP_POS, 12);
+    delay(PICKUP_DELAY);
+    
+    objectsCollected++;
+    Serial.print("Object picked up successfully! Total: ");
+    Serial.println(objectsCollected);
+    Serial.println("========================================");
+    
+    changeState(STATE_MOVING_TO_DISPOSAL);
+}
+
+void navigateToDisposal() {
+    Serial.println("Navigating to disposal area...");
+    
+    // Turn around
+    turnRight(180);
+    delay(300);
+    
+    // Move backward to disposal area
+    moveBackward(1500);
+    
+    // Small adjustment
+    turnLeft(30);
+    delay(200);
+    
+    changeState(STATE_DROPPING);
+}
+
+void executeDropSequence() {
+    Serial.println("=== Drop Sequence Initiated ===");
+    stopMotors();
+    delay(300);
+    
+    // Step 1: Lower the claw
+    Serial.println("Lowering claw...");
+    setLiftPosition(LIFT_DOWN_POS, 12);
+    delay(PICKUP_DELAY);
+    
+    // Step 2: Open the claw
+    Serial.println("Releasing object...");
+    setClawPosition(CLAW_OPEN_POS, 8);
+    delay(600);
+    
+    // Step 3: Lift the claw
+    Serial.println("Raising claw...");
+    setLiftPosition(LIFT_UP_POS, 12);
+    delay(PICKUP_DELAY);
+    
+    Serial.println("Object dropped successfully!");
+    Serial.println("========================================");
+    
+    // Return to scanning
+    changeState(STATE_SCANNING);
+    scanCount = 0;
+}
+
+void avoidObstacle() {
+    Serial.println("Obstacle detected! Avoiding...");
+    stopMotors();
+    delay(300);
+    
+    // Move backward slightly
+    moveBackward(500);
+    
+    // Turn right to avoid
+    turnRight(90);
+    delay(300);
+    
+    // Continue forward
+    changeState(STATE_MOVING_FORWARD);
+}
+
+// ========================================
+// SYSTEM FUNCTIONS
+// ========================================
+void performSystemCheck() {
+    Serial.println("Performing system check...");
+    
+    // Test motors
+    Serial.println("Testing motors...");
+    setMotorSpeed(100, 100);
+    delay(200);
+    stopMotors();
+    delay(200);
+    setMotorSpeed(-100, -100);
+    delay(200);
+    stopMotors();
+    
+    // Test servos
+    Serial.println("Testing servos...");
+    setLiftPosition(LIFT_MID_POS);
+    delay(300);
+    setClawPosition(CLAW_PARTIAL_CLOSE);
+    delay(300);
+    initializeServos();
+    
+    // Test sensors
+    Serial.println("Testing sensors...");
+    for (int i = 0; i < 3; i++) {
+        long dist = readUltrasonicDistance();
+        Serial.print("Distance reading: ");
+        Serial.println(dist);
+        delay(200);
+    }
+    
+    Serial.println("System check complete!");
+}
+
+void updateStatusLED() {
+    // Blink pattern based on state
+    static unsigned long lastBlink = 0;
+    static bool ledState = false;
+    
+    unsigned long blinkInterval = 500;
+    if (currentState == STATE_ERROR) {
+        blinkInterval = 100; // Fast blink for error
+    } else if (currentState == STATE_PICKING_UP || currentState == STATE_DROPPING) {
+        blinkInterval = 200; // Medium blink during operations
+    }
+    
+    if (millis() - lastBlink > blinkInterval) {
+        ledState = !ledState;
+        digitalWrite(STATUS_LED, ledState);
+        lastBlink = millis();
+    }
+}
+
+void errorState() {
+    Serial.println("ERROR: System malfunction!");
+    stopMotors();
+    digitalWrite(STATUS_LED, HIGH);
+    delay(100);
+    digitalWrite(STATUS_LED, LOW);
+    
+    // Attempt recovery after delay
+    if (millis() - lastStateChange > 5000) {
+        Serial.println("Attempting system recovery...");
+        performSystemCheck();
+        changeState(STATE_SCANNING);
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills & Technologies -->
+            <section class="content-section" style="margin-bottom: 4rem;">
+                <h2 class="content-title">Skills & Technologies Developed</h2>
+                <div class="content-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-family: var(--font-display); color: var(--text-primary); margin-bottom: 1.5rem;">Technical Skills</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Arduino programming and embedded systems</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Motor control (DC and servo motors)</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Sensor integration and calibration</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">3D design and printing</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Mechanical design and prototyping</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Iterative design and problem-solving</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-family: var(--font-display); color: var(--text-primary); margin-bottom: 1.5rem;">Professional Skills</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Business pitch development</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Competition presentation</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Team collaboration</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Project management under constraints</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Real-world problem identification</span>
+                            </li>
+                            <li style="padding: 0.75rem 0; display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--accent-primary);">▹</span>
+                                <span style="color: var(--text-secondary);">Entrepreneurship thinking</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close lightbox">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-image" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Lightbox functionality
+        function openLightbox(imageSrc, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            
+            lightboxImage.src = imageSrc;
+            lightboxCaption.textContent = caption;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === 'lightbox' || event.target.closest('.lightbox-close')) {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const lightbox = document.getElementById('lightbox');
+                if (lightbox.style.display === 'flex') {
+                    closeLightbox({ target: lightbox });
+                }
+            }
+        });
+
+        // Add hover effects to image wrappers
+        document.querySelectorAll('.image-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('mouseenter', function() {
+                const overlay = this.querySelector('.zoom-overlay');
+                if (overlay) overlay.style.opacity = '1';
+            });
+            
+            wrapper.addEventListener('mouseleave', function() {
+                const overlay = this.querySelector('.zoom-overlay');
+                if (overlay) overlay.style.opacity = '0';
+            });
+        });
+
+        // Code section toggle
+        function toggleCode() {
+            const codeContent = document.getElementById('code-content');
+            const codeIcon = document.getElementById('code-icon');
+            const codeToggle = document.getElementById('code-toggle');
+            
+            if (codeContent.style.display === 'none' || !codeContent.style.display) {
+                codeContent.style.display = 'block';
+                codeIcon.style.transform = 'rotate(90deg)';
+                codeToggle.querySelector('span:last-child').textContent = 'Click to collapse';
+            } else {
+                codeContent.style.display = 'none';
+                codeIcon.style.transform = 'rotate(0deg)';
+                codeToggle.querySelector('span:last-child').textContent = 'Click to expand';
+            }
+        }
+    </script>
+</body>
+</html>
+
