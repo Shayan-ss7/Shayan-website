@@ -107,7 +107,7 @@
             <!-- ==================== REFLECTION TAB ==================== -->
             <div id="reflection" class="tab-content active">
                 <div class="content-section">
-                    <h2 class="content-title">E-portfolio Reflection (Project 3)</h2>
+                    <h2 class="content-title">Project 3 Reflection</h2>
                     <p class="section-subtitle">Three-stage model: What? So What? Now What?</p>
 
                     <p style="color: var(--text-muted); font-size: 1rem; margin-top: -2rem; margin-bottom: 2.5rem;">
@@ -122,43 +122,21 @@
                         <div class="reflection-block">
                             <h3>🔎 What?</h3>
                             <p>
-                                During Project 3 in our design studio, my biggest "wait, we need to rethink this" moment
-                                happened when we first tested our Arduino prototype with the ultrasonic sensor and DC motor and it
-                                kept triggering at the wrong time. I expected the sensor to read one clear distance and the motor to
-                                run once, but in real testing the distance value jumped around, so the motor would start, stop, or
-                                activate twice, even when nothing changed. We were trying to test feasibility, meaning whether the idea
-                                could work reliably in real use, and this test showed our first logic was not reliable. The turning
-                                point was when we watched the serial monitor numbers flicker and heard the motor buzz on and off, and it
-                                made it obvious that our design needed an "armed" reset rule and a better trigger threshold. We changed
-                                our code so it only triggers when the distance crosses a set point, then locks until the hand moves away,
-                                and that made the system predictable instead of random. That moment challenged my assumption that a design
-                                that works "on paper" will work the same in real life, and it pushed us to make decisions based on test
-                                results instead of what we hoped would happen.
+                                During Project 3 in our design studio, my biggest “wait, we need to rethink this” moment happened when we first tested our Arduino prototype using an ultrasonic sensor and a DC motor, and it kept triggering at the wrong time. I expected one clear distance reading and one motor activation, but during testing the distance values jumped around, so the motor would start, stop, or activate twice even when nothing changed. We were testing feasibility, basically whether the idea could work reliably in real use, and this test showed our first logic was not reliable. The turning point was watching the serial monitor flicker and hearing the motor buzz on and off, because it made it obvious that noise was causing false triggers. We decided we needed a better trigger threshold and an “armed” reset rule so the system would only trigger once and then wait until the hand moved away. After changing the code to trigger when the distance crosses a set point and lock until it crosses a reset point, the behavior became predictable instead of random. This challenged my assumption that a design that works “on paper” will behave the same in real life, and it pushed us to rely on test evidence instead of guessing.
                             </p>
                         </div>
 
                         <div class="reflection-block">
                             <h3>🧠 So What?</h3>
                             <p>
-                                This incident taught me that early testing is very important because it quickly shows problems you
-                                cannot see from a sketch or code plan. I realized I had a misconception that if the logic is correct,
-                                the device will behave consistently, but real sensor data is messy and you have to design around the noise.
-                                It also improved how I make decisions, because instead of picking changes based on what "sounds right,"
-                                we used the test results to choose thresholds and add an armed reset rule. If we had delayed testing,
-                                we would have spent more time building around a design that was not reliable, and the fix would have been
-                                harder later.
+                                This incident taught me that early testing matters because it exposes real problems before you invest more time building the full system. I had a misconception that “correct code” automatically means reliable behavior, but real sensor data is messy and design decisions have to account for noise and timing. It also improved my decision-making because we stopped choosing fixes based on what sounded right and started choosing fixes based on what we observed and measured. The outcome of testing early was that we caught the reliability issue when it was still quick to fix, and we avoided building the rest of the design on top of a weak trigger system. If we waited to test until later, the same problem would have shown up under deadline pressure and the redesign would have taken longer.
                             </p>
                         </div>
 
                         <div class="reflection-block">
                             <h3>🚀 Now What?</h3>
                             <p>
-                                I learned that testing needs to happen early and be built into the plan, because real-world data will
-                                expose issues that you cannot predict from just designing on paper. This matters because as an engineer I
-                                need to make decisions based on evidence, not assumptions, especially when reliability affects safety and
-                                performance. Next time, I will test a simple version of the idea as soon as possible, collect clear data
-                                (like repeated trials and recorded measurements), and only then lock in design choices like thresholds,
-                                materials, or mechanisms.
+                                I learned that testing needs to be planned early, not saved for the end, because real-world data will always reveal failure points that sketches and ideal code will not. This matters to me as an engineer because reliability affects safety, performance, and user trust, so my decisions need to be evidence-based. Next time, I will test a simple version early, run repeated trials (for example 10 tests per condition), and write clear pass criteria like “one trigger per approach and zero false triggers” before I lock in thresholds or mechanisms.
                             </p>
                         </div>
 
