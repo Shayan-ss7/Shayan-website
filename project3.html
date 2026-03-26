@@ -58,44 +58,138 @@
                 <p class="project-hero-description animate-on-scroll">
                     The final design project for ENGINEER 1P13, bringing together 
                     all the skills and knowledge I've developed throughout the course. 
-                    Documentation coming soon.
+                    This page contains your ENG 1P13 Project 3 E-portfolio reflection (What / So What / Now What).
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Placeholder Content -->
+    <!-- Tabs Navigation -->
+    <section class="project-tabs-section">
+        <div class="container">
+            <div class="tabs-wrapper">
+                <button class="tab-btn" data-tab="narrative">
+                    <span class="tab-icon">📖</span>
+                    Project Narrative
+                </button>
+                <button class="tab-btn active" data-tab="reflection">
+                    <span class="tab-icon">💭</span>
+                    Reflection
+                </button>
+                <button class="tab-btn" data-tab="media">
+                    <span class="tab-icon">📸</span>
+                    Media & Gallery
+                </button>
+                <button class="tab-btn" data-tab="process">
+                    <span class="tab-icon">⚙️</span>
+                    Design Process
+                </button>
+                <button class="tab-btn" data-tab="skills">
+                    <span class="tab-icon">🛠️</span>
+                    Skills Developed
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Contents -->
     <main class="project-main">
         <div class="container">
-            <div class="upcoming-placeholder animate-on-scroll">
-                <div class="upcoming-icon">🎯</div>
-                <h2>Final Capstone Project</h2>
-                <p>
-                    Design Project 3 will be a culmination of the ENGINEER 1P13 
-                    course.
-                </p>
-                <div class="placeholder-features">
-                    <div class="placeholder-item">
-                        <span class="placeholder-icon">📖</span>
-                        <span>Project Narrative</span>
-                    </div>
-                    <div class="placeholder-item">
-                        <span class="placeholder-icon">💭</span>
-                        <span>Reflection</span>
-                    </div>
-                    <div class="placeholder-item">
-                        <span class="placeholder-icon">🛠️</span>
-                        <span>Skills</span>
-                    </div>
-                    <div class="placeholder-item">
-                        <span class="placeholder-icon">⚙️</span>
-                        <span>Design Process</span>
+
+            <!-- ==================== NARRATIVE TAB ==================== -->
+            <div id="narrative" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Project Narrative</h2>
+                    <p class="section-subtitle" style="margin-bottom: 0;">(intentionally left blank)</p>
+                </div>
+            </div>
+
+            <!-- ==================== REFLECTION TAB ==================== -->
+            <div id="reflection" class="tab-content active">
+                <div class="content-section">
+                    <h2 class="content-title">E-portfolio Reflection (Project 3)</h2>
+                    <p class="section-subtitle">Three-stage model: What? So What? Now What?</p>
+
+                    <p style="color: var(--text-muted); font-size: 1rem; margin-top: -2rem; margin-bottom: 2.5rem;">
+                        Name: Shayan Siddiqui &nbsp;•&nbsp; MacID: <span style="color: var(--accent-primary); font-weight: 700;">Siddm47</span>
+                    </p>
+
+                    <div class="reflection-content">
+                        <blockquote class="reflection-quote">
+                            "Early testing turned our design assumptions into evidence we could trust."
+                        </blockquote>
+
+                        <div class="reflection-block">
+                            <h3>🔎 What?</h3>
+                            <p>
+                                During Project 3 in our design studio, my biggest "wait, we need to rethink this" moment
+                                happened when we first tested our Arduino prototype with the ultrasonic sensor and DC motor and it
+                                kept triggering at the wrong time. I expected the sensor to read one clear distance and the motor to
+                                run once, but in real testing the distance value jumped around, so the motor would start, stop, or
+                                activate twice, even when nothing changed. We were trying to test feasibility, meaning whether the idea
+                                could work reliably in real use, and this test showed our first logic was not reliable. The turning
+                                point was when we watched the serial monitor numbers flicker and heard the motor buzz on and off, and it
+                                made it obvious that our design needed an "armed" reset rule and a better trigger threshold. We changed
+                                our code so it only triggers when the distance crosses a set point, then locks until the hand moves away,
+                                and that made the system predictable instead of random. That moment challenged my assumption that a design
+                                that works "on paper" will work the same in real life, and it pushed us to make decisions based on test
+                                results instead of what we hoped would happen.
+                            </p>
+                        </div>
+
+                        <div class="reflection-block">
+                            <h3>🧠 So What?</h3>
+                            <p>
+                                This incident taught me that early testing is very important because it quickly shows problems you
+                                cannot see from a sketch or code plan. I realized I had a misconception that if the logic is correct,
+                                the device will behave consistently, but real sensor data is messy and you have to design around the noise.
+                                It also improved how I make decisions, because instead of picking changes based on what "sounds right,"
+                                we used the test results to choose thresholds and add an armed reset rule. If we had delayed testing,
+                                we would have spent more time building around a design that was not reliable, and the fix would have been
+                                harder later.
+                            </p>
+                        </div>
+
+                        <div class="reflection-block">
+                            <h3>🚀 Now What?</h3>
+                            <p>
+                                I learned that testing needs to happen early and be built into the plan, because real-world data will
+                                expose issues that you cannot predict from just designing on paper. This matters because as an engineer I
+                                need to make decisions based on evidence, not assumptions, especially when reliability affects safety and
+                                performance. Next time, I will test a simple version of the idea as soon as possible, collect clear data
+                                (like repeated trials and recorded measurements), and only then lock in design choices like thresholds,
+                                materials, or mechanisms.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
-                <a href="index.html#coursework" class="btn btn-primary" style="margin-top: 2rem;">
-                    <span>View All Projects</span>
-                </a>
             </div>
+
+            <!-- ==================== MEDIA TAB ==================== -->
+            <div id="media" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Media & Gallery</h2>
+                    <p class="section-subtitle" style="margin-bottom: 0;">(intentionally left blank)</p>
+                </div>
+            </div>
+
+            <!-- ==================== PROCESS TAB ==================== -->
+            <div id="process" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Design Process</h2>
+                    <p class="section-subtitle" style="margin-bottom: 0;">(intentionally left blank)</p>
+                </div>
+            </div>
+
+            <!-- ==================== SKILLS TAB ==================== -->
+            <div id="skills" class="tab-content">
+                <div class="content-section">
+                    <h2 class="content-title">Skills Developed</h2>
+                    <p class="section-subtitle" style="margin-bottom: 0;">(intentionally left blank)</p>
+                </div>
+            </div>
+
         </div>
     </main>
 
