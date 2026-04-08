@@ -94,6 +94,11 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
+
+        /* Allow long code dropdowns to fully expand */
+        .accordion-item.p3-code-dropdown.active .accordion-content {
+            max-height: 2400px;
+        }
     </style>
 </head>
 <body>
@@ -424,6 +429,114 @@
                         <div class="gallery-item p3-media-card" style="background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); max-width: 900px; margin: 0 auto;">
                             <img src="media/p3/schematics/p3_tinkercad-schem.jpg" alt="Tinkercad circuit schematic" class="p3-media-img" style="width:100%; height:auto; display:block;">
                             <div style="padding: 1rem;"><p style="margin: 0; color: var(--text-secondary);">Circuit schematic (Tinkercad)</p></div>
+                        </div>
+                    </div>
+
+                    <div class="content-section" style="margin-bottom: 3rem;">
+                        <h3 class="content-title" style="font-size: 1.35rem;">Arduino Control Code</h3>
+                        <p class="section-subtitle" style="margin-bottom: 1rem;">
+                            Team implementation used for ultrasonic triggering and motor actuation.
+                        </p>
+                        <div class="accordion">
+                            <div class="accordion-item p3-code-dropdown">
+                                <button class="accordion-header">
+                                    <span>View Full Arduino Code (.ino)</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </button>
+                                <div class="accordion-content">
+                                    <pre class="code-block"><code>/*
+Parts of code sampled from ENGINEER 1P13 Ultrasonic sensor sample workshop
+
+Some Sensor Info:
+The ultrasonic sensor measures distance by emitting a high-frequency pulse and then listening back for the echo.
+The time it takes for the echo to come back can be turned into distance using the speed of sound.
+Note the speed of sound changes depending on the environment, but around room temperature and 1 atm of pressure, it's about 343 m/s.
+We simply need to turn on the sensor by sending it a pulse on the trig pin, then listen for the pulse back on the echo pin and the rest is just math!
+We can then read the distance it gives us out using a serial monitor, which is where we print out things from the Arduino, like we would in Python. - Engineer 1P13 Sample Code
+*/
+
+// Define pin numbers
+#define ECHO_PIN 11 // Echo pin of ultrasonic sensor goes to pin 11 on Arduino
+#define TRIG_PIN 12 // Trig pin of ultrasonic sensor goes to pin 12 on Arduino
+#define LED_PIN 10  // LED positive terminal goes to pin 10 on Arduino
+
+float distance_cm; // Distance read in cm
+long duration;     // Length of the pulse we hear back on the echo pin in us
+
+float speed_of_sound = 0.0343; // cm/us at Standard Ambient Temperature and Pressure
+
+const int input2 = 2;  // Defining pins for the motor controller
+const int input1 = 3;
+const int enablePin = 5;
+
+// Function for sensor
+void pulse_trig()
+{
+  digitalWrite(TRIG_PIN, LOW);  // First set the pin low to clear residual signal
+  delayMicroseconds(5);
+  digitalWrite(TRIG_PIN, HIGH); // Start pulse
+  delayMicroseconds(10);        // Keep pulse high for at least 10 us
+  digitalWrite(TRIG_PIN, LOW);  // Reset pulse and listen for echo
+}
+
+// This code runs only once at startup on the Arduino
+void setup()
+{
+  Serial.begin(9600); // Start serial monitor
+
+  // Setting pin modes for ultrasonic sensor and LED
+  pinMode(ECHO_PIN, INPUT);
+  pinMode(TRIG_PIN, OUTPUT);
+  // pinMode(LED_PIN, OUTPUT);
+
+  // Motor controller pins
+  pinMode(input2, OUTPUT);
+  pinMode(input1, OUTPUT);
+  pinMode(enablePin, OUTPUT);
+}
+
+// This code runs repeatedly while Arduino is powered
+void loop()
+{
+  pulse_trig(); // Pulse trig pin
+  duration = pulseIn(ECHO_PIN, HIGH); // Read echo time
+
+  // Divide by 2 since pulse travels to object and back
+  distance_cm = duration / 2 * speed_of_sound;
+
+  // Distance threshold of 15 cm for Mark's hand
+  if (distance_cm > 15.0)
+  {
+    digitalWrite(LED_PIN, HIGH); // Testing purposes
+    delay(250);
+  }
+  else
+  {
+    // digitalWrite(LED_PIN, LOW);
+    Serial.print("In range");
+    delay(250);
+
+    analogWrite(enablePin, 250); // Motor speed
+    digitalWrite(input1, HIGH);  // Turn motor on
+    digitalWrite(input2, LOW);
+    delay(250);                  // Screw rotation time
+
+    analogWrite(enablePin, 0);   // Stop motor
+    digitalWrite(input1, LOW);
+    digitalWrite(input2, LOW);
+
+    Serial.print("Motor Done");
+    delay(3000);
+    Serial.print("Ready again");
+  }
+
+  Serial.print(distance_cm);
+  Serial.println(" cm");
+}</code></pre>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
